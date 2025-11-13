@@ -19,6 +19,7 @@
 * Request id passed downstream
 * Schema version in meta
 * Non blocking schema update on read operstions
+* Whether to return processed entity
 
 Out of scope
 * No migrations
@@ -30,3 +31,5 @@ Postpones:
 Subprojects:
 * Interface
 * Integration tests to run against storage engine
+
+Mass operations similar to Etl load are expected to be handled by different mechanism, that should respect all storage constraints on its own

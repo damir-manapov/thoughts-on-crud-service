@@ -20,10 +20,14 @@
 * Schema version in meta
 * Non blocking schema update on read operstions
 * Whether to return processed entity
+* Ignore duplicates on create many, update many option
 
 Out of scope
 * No migrations
 * No schema change
+* We don't want return resulted entiti on update/create, it affects performance. Or maybe we should give ability to user set such parameter still?
+* Replace for full rewrite entry by provided values, update to merge provided values to previous ones
+* Expressions in update (+1 for example). Can't be performed due to uniqueness by in different database
 
 Postpones:
 * Tuples
